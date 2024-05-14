@@ -1,0 +1,134 @@
+body {
+    background-color: #333;
+}
+
+.cabecera {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Blogger Sans;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.fa-bars-staggered {
+    font-size: 25px;
+    color: rgb(255, 153, 0);
+    margin-right: 10px;
+    transition: color 0.2s;
+}
+
+.fa-bars-staggered:hover {
+    color: rgb(255, 204, 51);
+}
+
+.nav-bar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-family: Blogger Sans;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 150px;
+    height: auto;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+    margin-top: 5px;
+    margin-right: 10px;
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-bar li {
+    display: inline;
+}
+
+.nav-bar a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: left;
+    padding-left:48px;
+    text-decoration: none;
+    transition: color 0.2s, background-color 0.2s;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.nav-bar a:hover {
+    color: rgb(255, 204, 51);
+    background-color: dimgray;
+    cursor: pointer;
+}
+
+.sort {
+    justify-content: center;
+    margin-top: 10px;
+    min-width: min-content;
+    max-width: max-content;
+}
+
+.sort a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.2s, background-color 0.2s;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+}
+
+.sort a:hover {
+    color: rgb(255, 204, 51);
+    background-color: dimgray;
+    cursor: pointer;
+}
+
+.sort ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sort li {
+    display: inline;
+    background-color: #333;
+    border-radius: 5px;
+    float: left;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+.barra {
+    width: 5px;
+    height: 3px;
+    margin: 1px;
+    display: inline-block;
+    background: linear-gradient(to top, #333, white); 
+    vertical-align: bottom;
+    border-radius: 3px;
+}
+
+.bar {
+    margin: 10px;
+}
