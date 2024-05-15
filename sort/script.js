@@ -236,4 +236,5 @@ async function startQuickSort(array, start, end) {
 
 document.addEventListener("DOMContentLoaded", function() {
   crearBarras();
+  desordenarArreglo();
 });
