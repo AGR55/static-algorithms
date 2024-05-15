@@ -19,28 +19,57 @@
 
     <div class="nav-bar">
         <ul>
-            <li><a href="#">SORT</a></li>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="sort.html">SORT</a></li>
             <li><a href="#">MORE..</a></li>
         </ul>
     </div>
 
     <div class="sort">
         <ul>
-            <li><a href="/sort/BubbleSort.html">Bubble Sort</a></li>
-            <li><a href="/sort/InsertionSort.html">Insertion Sort</a></li>
-            <li><a href="/sort/HeapSort.html">Heap Sort</a></li>
-            <li><a href="/sort/MergeSort.html">Merge Sort</a></li>
-            <li><a href="/sort/QuickSort.html">Quick Sort</a></li>
+            <li><a href="BubbleSort.html">Bubble Sort</a></li>
+            <li><a href="InsertionSort.html">Insertion Sort</a></li>
+            <li><a href="HeapSort.html">Heap Sort</a></li>
+            <li><a href="MergeSort.html">Merge Sort</a></li>
+            <li><a href="QuickSort.html">Quick Sort</a></li>
         </ul>
     </div>
 
     <div class="boton">
-        <input type="button" class="ordenar" value="Ordenar" onclick="quickSort()">
-        <input type="button" value="Desordenar" class="desordenar" onclick="desordenarArreglo()">
+        <button class="ordenar" onclick="selectionSort()" aria-label="Ordenar">
+            <i class="fa-solid fa-play"></i>
+        </button>
+        <button value="Desordenar" class="desordenar" onclick="desordenarArreglo()" aria-label="Desordenar">
+            <i class="fa-solid fa-shuffle"></i>
+        </button>
     </div>
 
     <div id="contenedor" class="bar"></div>
 
+    <div class="info">
+        <div class="title">
+            <h1>SELECTION SORT</h1>
+      </div>
+      <div class="tabla">
+        <table>
+            <tr>
+                <th>Average Complexity</th>
+                <td>O(n<sup class="super">2</sup>)</td>
+            </tr>
+            <tr>
+                <th>Best Case</th>
+                <td>O(n<sup class="super">2</sup>)</td>
+            </tr>
+            <tr>
+                <th>Worst Case</th>
+                <td>O(n<sup class="super">2</sup>)</td>
+            </tr>
+            <tr>
+                <th>Space Complexity</th>
+                <td>O(1)</td>
+            </tr>
+        </table>
+    </div>
     <script src="script.js"></script>
     </div>
 </body>

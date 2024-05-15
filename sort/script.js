@@ -61,7 +61,7 @@ function crearBarras() {
   // Crear nuevas barras
   valores.forEach((valor) => {
       var barra = document.createElement('div');
-      barra.style.height = (valor * 3) + 'px';
+      barra.style.height = (valor * 4) + 'px';
       barra.classList.add('barra');
 
       contenedor.appendChild(barra);
