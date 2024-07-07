@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SORT</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <script src="https://kit.fontawesome.com/7971e93029.js" crossorigin="anonymous"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -20,7 +20,7 @@
     <div class="nav-bar">
         <ul>
             <li><a href="../index.html">HOME</a></li>
-            <li><a href="sort.html">SORT</a></li>
+            <li><a href="../sort.html">SORT</a></li>
             <li><a href="#">MORE..</a></li>
         </ul>
     </div>
@@ -36,15 +36,21 @@
     </div>
 
     <div class="boton">
-        <button class="ordenar" onclick="mergeSort()" aria-label="Ordenar">
-            <i class="fa-solid fa-play"></i>
-        </button>
-        <button value="Desordenar" class="desordenar" onclick="desordenarArreglo()" aria-label="Desordenar">
-            <i class="fa-solid fa-shuffle"></i>
-        </button>
+        <div class="botones">
+            <button class="ordenar" onclick="mergeSort()" aria-label="Ordenar">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button value="Desordenar" class="desordenar" onclick="desordenarArreglo()" aria-label="Desordenar">
+                <i class="fa-solid fa-shuffle"></i>
+            </button>
+        </div>
+        <div class="rango">
+            <input type="range" title="Count" class="contador" min="10" max="500" value="100" id="rangeInput" oninput="updateValue(this.value)">
+            <span id="displayValue"></span>
+        </div>
     </div>
 
-    <div id="contenedor" class="bar"></div>
+    <div id="contenedor" class="barra"></div>
 
     <div class="info">
         <div class="title">
@@ -70,7 +76,7 @@
             </tr>
         </table>
     </div>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
     </div>
 </body>
 </html>
